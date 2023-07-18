@@ -325,7 +325,7 @@ let data = {
 }
 let config ={
   headers:{
-    Authorization:"Bearer EAALpLPNZCuZA8BABF1pgSPJCRJWdgmlAlx1JFqRfcwBZCjaMxFV6qITjLd2HxLBzSm2oXFR779zRE5QZAizVLCRGo7Fos3ZABlMC2wmBbkc2xQstLNcOYztsxZBlhgCr7xnZB9ogQUllM89xc8HWBG4ZBScleasesQv73ah3p3vMh9ofpnzZADCJw"
+    Authorization:"Bearer "+ process.env.jwtToken
   }
 }
 axios.post(url,data,config)
