@@ -2,48 +2,5 @@
   type: 'text',
   from: '5215582914841',
   to: '5215574412572',
-  body: 'hola'
-}
-[handleMsg]:  {
-  type: 'interactive',
-  from: '5215582914841',
-  to: '5215574412572',
-  body: 'C',
-  title_list_reply: 'Asesorias'
-}
-[handleMsg]:  {
-  type: 'interactive',
-  from: '5215582914841',
-  to: '5215574412572',
-  body: 'Iximati',
-  title_list_reply: 'Iximati'
-}
-[handleMsg]:  {
-  type: 'interactive',
-  from: '5215582914841',
-  to: '5215574412572',
-  body: 'B (+1)',
-  title_list_reply: undefined
-}
-[handleMsg]:  { type: 'text', from: '5215582914841', to: '5215574412572', body: '1' }
-[handleMsg]:  {
-  type: 'text',
-  from: '5215582914841',
-  to: '5215574412572',
-  body: 'no'
-}
-[handleMsg]:  { type: 'text', from: '5215532693946', to: '5215574412572', body: '.' }
-[handleMsg]:  {
-  type: 'interactive',
-  from: '5215532693946',
-  to: '5215574412572',
-  body: 'Iximati',
-  title_list_reply: 'Iximati'
-}
-[handleMsg]:  {
-  type: 'interactive',
-  from: '5215532693946',
-  to: '5215574412572',
-  body: 'B (+1)',
-  title_list_reply: undefined
+  body: 'Hola'
 }

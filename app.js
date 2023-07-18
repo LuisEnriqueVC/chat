@@ -1,8 +1,7 @@
 const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
-
 const MetaProvider = require('@bot-whatsapp/provider/meta')
 const MockAdapter = require('@bot-whatsapp/database/mock')
-
+require('dotenv').config({path:'./.env'})
 /**
  * Aqui declaramos los flujos hijos, los flujos se declaran de atras para adelante, es decir que si tienes un flujo de este tipo:
  *
@@ -394,9 +393,9 @@ const main = async () => {
     const adapterFlow = createFlow([flowPrincipal,flowA,flowB,flowC,flowCall,flujodeBotons,flowEquipo,flujoImagen,flowSinEquipo,flowTerminales,flowTermin2])
 
     const adapterProvider = createProvider(MetaProvider, {
-        jwtToken: 'EAALpLPNZCuZA8BABF1pgSPJCRJWdgmlAlx1JFqRfcwBZCjaMxFV6qITjLd2HxLBzSm2oXFR779zRE5QZAizVLCRGo7Fos3ZABlMC2wmBbkc2xQstLNcOYztsxZBlhgCr7xnZB9ogQUllM89xc8HWBG4ZBScleasesQv73ah3p3vMh9ofpnzZADCJw',
-        numberId: '101193863049643',
-        verifyToken: 'HolaNovato',
+        jwtToken: process.env.jwtToken,
+        numberId: process.env.numberId,
+        verifyToken: process.env.verifyToken,
         version: 'v17.0',
     })
 
